@@ -1,0 +1,62 @@
+/* Sidebar overlay styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -250px; /* Move the sidebar off-screen to the right */
+  width: 250px;
+  height: 100%;
+  background: linear-gradient(
+    to top,
+    #890e0e,
+    #870021,
+    #810031,
+    #77003e,
+    #6a054a,
+    #5d0c45,
+    #501040,
+    #44123a,
+    #371029,
+    #280e1c,
+    #1a0810,
+    #000000
+  );
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 60px;
+  z-index: 1000; /* Ensure it overlays other content */
+}
+
+.sidebar.open {
+  right: 0; /* Slide the sidebar in from the right */
+}
+
+/* Sidebar content */
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar ul li:hover {
+  color: #575555;
+}
+
+/* Close button */
+.close-button {
+  font-size: 30px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #f1f1f1;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}

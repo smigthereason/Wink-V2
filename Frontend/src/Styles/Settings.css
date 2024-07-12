@@ -1,0 +1,183 @@
+/* Settings.css */
+.settings-container {
+  display: flex;
+  /* background-color: #000; */
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.settings-sidebar {
+  width: 300px;
+  padding: 20px;
+  background-color: #11111157;
+  border-right: 1px solid #333;
+}
+
+.settings-main {
+  flex: 1;
+  padding: 20px;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.control-section,
+.visibility-section,
+.discovery-section {
+  margin-bottom: 20px;
+}
+
+.setting-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.setting-description {
+  font-size: 0.8em;
+  color: #ddd4d4;
+  margin-top: -5px;
+  margin-bottom: 10px;
+}
+Link{
+  text-decoration: none;
+  color: #fff;
+  
+}
+
+.Wink-plus {
+  position: relative;
+  display: flex;
+  left: 80px;
+  background-color: #ba44ff;
+  color: #fff;
+  padding: 5px 5px;
+  border-radius: 3px;
+  font-size: 0.7em;
+  margin-left: 5px;
+  align-items: center;
+  width: 100px;
+  border-radius: 50%;
+  height: 100px;
+
+}
+.Wink-plus::before {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  font-size: 0.8em;
+  font-weight: bold;
+  margin: 0 5px;
+}
+.Wink-plus:hover {
+  background-color: #b22dff;
+}
+.Wink-plus:active {
+  background-color: #b22dff1f;
+}
+.Wink-plus h6 {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-left: 10px;
+
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #ff4458;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 24px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.profile-card {
+  background-color: #222;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.verified-icon {
+  color: #00a8ff;
+  margin-left: 5px;
+}
+
+.looking-for {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.looking-for .icon {
+  margin-right: 10px;
+}
+
+.language-tags,
+.passion-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.language-tags span,
+.passion-tags span {
+  background-color: #333;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.9em;
+}

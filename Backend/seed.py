@@ -46,7 +46,7 @@ def seed_users():
                     'gender': 'female',
                     'occupation': 'Junior Software Developer',
                     'bio': 'Tech enthusiast learning to code and build cool apps.',
-                    'photos': '/Backend/Assets/Ladies/13.jpeg',
+                    'photos': '../Backend/Assets/Ladies/13.jpeg',
                     'preferences': 'male',
                     'hobbies': 'Gaming, cosplay, learning new programming languages'
                 }
