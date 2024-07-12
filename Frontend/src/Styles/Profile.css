@@ -1,0 +1,152 @@
+.body{
+  background: rgba(167, 161, 161, 0.26);
+
+}
+.profile-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px;
+  border-radius: 10px;
+  background: linear-gradient(
+    to top,
+    #890e0e,
+    #870021,
+    #810031,
+    #77003e,
+    #6a054a,
+    #5d0c45,
+    #501040,
+    #44123a,
+    #371029,
+    #280e1c,
+    #1a0810,
+    #000000
+  );
+  padding: 20px;
+  border-radius: 8px;
+  color: white;
+}
+
+.media-upload {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.media-upload label {
+  margin-bottom: 8px;
+  width: 50%;
+  margin-left: 25%;
+}
+
+h1 {
+  margin-bottom: 16px;
+}
+
+.upload-button {
+  width: 50%; 
+  margin: 0 auto; 
+  border-radius: 25px;
+  background-color: #a01d3d; 
+  color: white; 
+  transition: background-color 0.3s ease; 
+}
+
+.upload-button:hover {
+  background-color: #770822; 
+}
+
+.submit-button {
+  width: 30%; 
+  margin: 16px auto 0 auto;
+  border-radius: 25px; 
+  background-color: #a01d3d; 
+  color: white; 
+  transition: background-color 0.3s ease; 
+}
+
+.submit-button:hover {
+  background-color: #770822;
+}
+.text-field input,
+.text-field .MuiInputBase-input {
+  color: white; 
+}
+
+.text-field .MuiInputBase-root {
+  background-color: black; 
+  border-radius: 20px; 
+}
+
+.text-field .MuiOutlinedInput-notchedOutline {
+  border-color: rgb(255, 255, 255); 
+}
+
+.text-field .MuiInputLabel-root {
+  color: white; 
+}
+
+.text-field .MuiInputLabel-root.Mui-focused {
+  color: white; 
+}
+
+
+.media-upload {
+  margin-top: 20px;
+}
+
+
+.media-previews {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.media-preview {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+}
+.play-button-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.media-preview:hover .play-button-overlay {
+  opacity: 1;
+}
+
+.play-button {
+  color: white;
+  font-size: 48px;
+}
+
+.preview-image,
+.preview-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.preview-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
